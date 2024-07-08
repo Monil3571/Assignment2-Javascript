@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+
+	<!-- In the head sections, along with the meta tags, I have linked the css and a custom google font which we will use later in the css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Image Gallery</h1>
+	<section id="gallery">
+
+		<!-- Initially we will display the pink flowers image. -->
+		<figure>
+			<img id="featured-image" src="images/flowers-pink-large.jpg" alt="Pink flowers" width="1200" height="800" />
+			<figcaption>Pink flowers</figcaption>
+		</figure>
+
+		<!-- I have given the ul an id which will allow us to access the whole list as an array and this will make it 
+		 easier to loop through -->
+		<ul id="thumbnails">
+
+			<!-- Initially samller version of all the other images are displayed. -->
+			<li><img src="images/flowers-pink-small.jpg" alt="Pink flowers" width="240" height="160" data-large="images/flowers-pink-large.jpg" data-title="Pink flowers" /></li>
+			<li><img src="images/flowers-purple-small.jpg" alt="Purple flowers" width="240" height="160" data-large="images/flowers-purple-large.jpg" data-title="Purple flowers" /></li>
+			<li><img src="images/flowers-red-small.jpg" alt="Red flowers" width="240" height="160" data-large="images/flowers-red-large.jpg" data-title="Red flowers" /></li>
+			<li><img src="images/flowers-white-small.jpg" alt="White flowers" width="240" height="160" data-large="images/flowers-white-large.jpg" data-title="White flowers" /></li>
+			<li><img src="images/flowers-yellow-small.jpg" alt="Yellow flowers" width="240" height="160" data-large="images/flowers-yellow-large.jpg" data-title="Yellow flowers" /></li>
+		</ul>
+	</section>
+	<!-- lastly, I have linked the javascript file. -->
+	<script src="js/script.js"></script>
+	<!-- PHOTO CREDITS
+	Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61514522
+
+	Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=40957238
+
+	Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48211466
+
+	Sentmaring Park, Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48576226
+
+	Market in Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62071586
+	-->
+</body>
+</html>

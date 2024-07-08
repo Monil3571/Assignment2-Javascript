@@ -1,0 +1,77 @@
+/* In the css i have simply experimented and finalized what looked best */
+body {
+	font-family: "DM Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #9C6379;
+}
+
+h1 {
+	color: #333;
+    background-color: #639C86;
+    max-width: fit-content;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#gallery {
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+figure {
+    margin: 0;
+	position: relative;
+}
+
+#featured-image {
+    width: 100%;
+	height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 0 0;
+}
+
+ul li {
+	margin: 0 10px;
+}
+
+ul li img {
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: border-color 0.3s;
+}
+
+ul li img.active,
+ul li img:hover {
+	border-color: #333;
+}
+
+/* This is to display the currently selected thumbnail in color*/
+ul li img.active {
+	filter: none;
+}
+
+/* This is to make all the other images black and white */
+ul li img {
+	filter: grayscale(100%);
+	transition: filter 0.3s;
+}
